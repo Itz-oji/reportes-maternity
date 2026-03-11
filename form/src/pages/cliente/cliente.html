@@ -1,0 +1,72 @@
+<section class="page cliente">
+  <h2>♡ Sobre ti</h2>
+  <p class="hint">
+    Estos datos nos ayudan a contactarte y preparar correctamente la cotización.
+  </p>
+
+  <hr />
+
+  <!-- Nombre y Apellido -->
+  <div class="field-group">
+    <div class="field">
+      <label for="nombre">Nombre <span class="req">*</span></label>
+      <input id="nombre" type="text" placeholder="Ej: Benjamín" autocomplete="given-name" />
+    </div>
+
+    <div class="field">
+      <label for="apellido">Apellidos <span class="req">*</span></label>
+      <input id="apellido" type="text" placeholder="Ej: González" autocomplete="family-name" />
+    </div>
+  </div>
+
+  <div class="edad">
+    <div class="field">
+      <label for="apo-edad">Fecha de nacimiento <span class="req">*</span></label>
+      <input id="apo-edad" class="apo-edad" type="text" placeholder="Selecciona una fecha" readonly autocomplete="bday" />
+    </div>
+  </div>
+
+  <!-- RUT -->
+  <div class="field">
+    <label for="rut">RUT apoderado <span class="req">*</span></label>
+    <small class="helper">
+      (Este dato se utiliza únicamente para fines administrativos y de facturación)
+    </small>
+    <input
+      id="rut"
+      type="text"
+      placeholder="Ej: 11.111.111-1"
+    />
+  </div>
+
+  <!-- Correo -->
+  <div class="field">
+    <label for="email">Correo electrónico <span class="req">*</span></label>
+    <input
+      id="email"
+      type="email"
+      placeholder="ejemplo@ejemplo.com"
+      autocomplete="email"
+    />
+  </div>
+
+  <div class="field-group">
+    <!-- Móvil -->
+    <div class="field">
+      <label for="telefonoMovil">Teléfono móvil <span class="req">*</span></label>
+      <div class="phone-field">
+        <span class="phone-prefix">+56</span>
+        <input id="telefonoMovil" type="tel" maxlength="9" placeholder="9 1234 5678" autocomplete="tel" />
+      </div>
+    </div>
+
+    <!-- Fijo -->
+    <div class="field">
+      <label for="telefonoFijo">Teléfono fijo</label>
+      <div class="phone-field">
+        <span class="phone-prefix">+56</span>
+        <input id="telefonoFijo" type="tel" maxlength="9" placeholder="2 2345 6789" autocomplete="tel" />
+      </div>
+    </div>
+  </div>
+</section>
